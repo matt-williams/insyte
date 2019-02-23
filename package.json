@@ -24,6 +24,7 @@
   "homepage": "https://github.com/matt-williams/insyte#readme",
   "dependencies": {
     "express": "^4.16.4",
+    "express-handlebars": "^3.0.1",
     "node-quickbooks": "^2.0.26"
   }
 }
