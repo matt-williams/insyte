@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/matt-williams/insyte#readme",
   "dependencies": {
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "node-quickbooks": "^2.0.26"
   }
 }
