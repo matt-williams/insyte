@@ -1,0 +1,28 @@
+{
+  "name": "insyte",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Crowd-sourced business insight for Intuit QuickBooks",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matt-williams/insyte.git"
+  },
+  "engines": {
+    "node": ">=8"
+  },
+  "scripts": {
+    "build": "docker build -t insyte .",
+    "deploy": "gcloud app deploy",
+    "start": "node app.js"
+  },
+  "author": "matwilliams@hotmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matt-williams/insyte/issues"
+  },
+  "homepage": "https://github.com/matt-williams/insyte#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
