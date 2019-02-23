@@ -1,4 +1,31 @@
-{{#items}}
-<h1>{{id}}</h1>
-<img src="{{url}}"></img></p>
-{{/items}}
+<nav class="navbar navbar-light bg-light static-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">Insyte</a>
+    <a class="btn btn-primary" href="#">Refresh</a>
+  </div>
+</nav>
+
+<h1>Insyte Report</h1>
+
+
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Image</th>
+      </tr>
+    </thead>
+    <tbody>
+      <td><input type="checkbox" class="checkthis" /></td>
+      {{#items}}
+      <tr>
+      <td>{{id}}</td>
+      <td><img src="{{url}}"></img></p></td>
+      </tr>
+      {{/items}}
+    </tbody>
+  </table>
+
+  <div class="col-12 col-md-3">
+    <button type="submit" class="btn btn-block btn-lg btn-primary">Sign up!</button>
+  </div>
