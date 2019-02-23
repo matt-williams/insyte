@@ -1,1 +1,8 @@
 runtime: nodejs10
+
+env_variables:
+  QUICKBOOKS_CLIENT_ID: xxx
+  QUICKBOOKS_CLIENT_SECRET: xxx
+  QUICKBOOKS_ACCESS_TOKEN: xxx
+  QUICKBOOKS_REALM_ID: xxx
+  CLARIFAI_API_KEY: xxx
