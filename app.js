@@ -20,6 +20,7 @@ const expressHandlebars = require('express-handlebars');
 //});
  
 const app = express();
+app.use(express.static('static'))
 app.engine('handlebars', expressHandlebars({defaultLayout: 'main'}));
 app.set('view engine', 'handlebars');
 app.set('views', './views');
