@@ -1,7 +1,8 @@
 runtime: nodejs10
 
 env_variables:
-  QB_CLIENT_ID: xxx
-  QB_CLIENT_SECRET: xxx
-  QB_ACCESS_TOKEN: xxx
-  QB_REALM_ID: xxx
+  QUICKBOOKS_CLIENT_ID: xxx
+  QUICKBOOKS_CLIENT_SECRET: xxx
+  QUICKBOOKS_ACCESS_TOKEN: xxx
+  QUICKBOOKS_REALM_ID: xxx
+  CLARIFAI_API_KEY: xxx

@@ -1,24 +1,23 @@
 'use strict';
 
 const QuickBooks = require('node-quickbooks')
+const Clarifai = require('clarifai');
 const express = require('express');
 const expressHandlebars = require('express-handlebars');
 
-const PORT = process.env.PORT || 8080;
-const QB_CLIENT_ID = process.env.QB_CLIENT_ID;
-const QB_CLIENT_SECRET = process.env.QB_CLIENT_SECRET;
-const QB_ACCESS_TOKEN = process.env.QB_ACCESS_TOKEN;
-const QB_REALM_ID = process.env.QB_REALM_ID;
-
-const qbo = new QuickBooks(QB_CLIENT_ID,
-                           QB_CLIENT_SECRET,
-                           QB_ACCESS_TOKEN,
+const qbo = new QuickBooks(process.env.QUICKBOOKS_CLIENT_ID,
+                           process.env.QUICKBOOKS_CLIENT_SECRET,
+                           process.env.QUICKBOOKS_ACCESS_TOKEN,
                            null,
-                           QB_REALM_ID,
+                           process.env.QUICKBOOKS_REALM_ID,
                            true,
                            true,
                            34,
                            '2.0');
+ 
+const clarifai = new Clarifai.App({
+  apiKey: process.env.CLARIFAI_API_KEY
+});
  
 const app = express();
 app.engine('handlebars', expressHandlebars({defaultLayout: 'main'}));
@@ -62,4 +61,5 @@ app.get('/', (req, res) => {
   });
 });
 
+const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => console.log(`Listening on port ${PORT}`));
