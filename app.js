@@ -206,7 +206,7 @@ app.get('/attachables.html', async (req, res) => {
     var scores = await getScores('https://www.pinterest.co.uk/matwilliams2875/feed.rss');
     scores = summarizeScores(scores);
     items.forEach(item => {
-      item.Score = (scores[item.Id] * 100).toFixed(1) + '%';
+      item.Score = (scores[item.Id] * 150 - 25).toFixed(1) + '%';
     });
 
     fs.writeFile('items.json', JSON.stringify(items, null, 2), (err) => {if (err) {console.log(err)}});
@@ -245,9 +245,9 @@ app.get('/pinterest.html', async (req, res) => {
     });
 
     pinterest.results.forEach(result => {
-      result.scores = result.scores.map(score => (score * 100).toFixed(1) + '%');
+      result.scores = result.scores.map(score => (score * 150 - 25).toFixed(1) + '%');
     });
-    pinterest.totals = pinterest.totals.map(score => (score * 100).toFixed(1) + '%');
+    pinterest.totals = pinterest.totals.map(score => (score * 150 - 25).toFixed(1) + '%');
 
     fs.writeFile('pinterest.json', JSON.stringify(items, null, 2), (err) => {if (err) {console.log(err)}});
     res.render('pinterest', {'items': items, 'pinterest': pinterest});

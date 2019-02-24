@@ -40,10 +40,10 @@
       "CreateTime": "2019-02-23T07:28:53-08:00",
       "LastUpdatedTime": "2019-02-23T15:31:54-08:00"
     },
-    "Url": "https://intuit-qbo-prod-28.s3.amazonaws.com/123145730635304/attachments/6e82145d-df44-432f-8059-3db4ddc8d60d105.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20190224T121254Z&X-Amz-SignedHeaders=host&X-Amz-Expires=900&X-Amz-Credential=AKIAJEXDXKNYCBUNCCCQ%2F20190224%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=aea954485c14e9b141d59a468910f6fc75decd9928e2f2cf245be2a5b588dbaa",
+    "Url": "https://intuit-qbo-prod-28.s3.amazonaws.com/123145730635304/attachments/6e82145d-df44-432f-8059-3db4ddc8d60d105.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20190224T125606Z&X-Amz-SignedHeaders=host&X-Amz-Expires=899&X-Amz-Credential=AKIAJEXDXKNYCBUNCCCQ%2F20190224%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=30c192fd35858a457999640bd4cf101c49320497e019469246575a4cd9738d49",
     "Revenue": 5800,
     "TurnoverRatio": "10%",
-    "Score": "45.2%"
+    "Score": "42.8%"
   },
   {
     "Name": "Earrings",
@@ -86,8 +86,8 @@
       "CreateTime": "2019-02-23T07:28:54-08:00",
       "LastUpdatedTime": "2019-02-23T15:31:54-08:00"
     },
-    "Url": "https://intuit-qbo-prod-27.s3.amazonaws.com/123145730635304/attachments/c1f3fa7b-491e-43ee-b400-2cea277c3607106.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20190224T121254Z&X-Amz-SignedHeaders=host&X-Amz-Expires=900&X-Amz-Credential=AKIAJEXDXKNYCBUNCCCQ%2F20190224%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=e5234c396c0a4e3763d76f76757fef9d68785925718e0026ea0fc189f54987b3",
-    "Score": "55.5%"
+    "Url": "https://intuit-qbo-prod-27.s3.amazonaws.com/123145730635304/attachments/c1f3fa7b-491e-43ee-b400-2cea277c3607106.jpg?AWSAccessKeyId=AKIAJEXDXKNYCBUNCCCQ&Expires=1551013866&Signature=LKJFtXY16zQ7xlzwkC2b47wHcbE%3D",
+    "Score": "58.2%"
   },
   {
     "Name": "Necklace",
@@ -130,8 +130,8 @@
       "CreateTime": "2019-02-23T07:28:53-08:00",
       "LastUpdatedTime": "2019-02-23T15:31:54-08:00"
     },
-    "Url": "https://intuit-qbo-prod-20.s3.amazonaws.com/123145730635304/attachments/25863fa3-94da-4898-8d55-c4df4184725a104.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20190224T121254Z&X-Amz-SignedHeaders=host&X-Amz-Expires=900&X-Amz-Credential=AKIAJEXDXKNYCBUNCCCQ%2F20190224%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=02909d2a82d75886a2bf494f58a7f86a39080f507af4a8d67f326f75e4f21be2",
-    "Score": "48.3%"
+    "Url": "https://intuit-qbo-prod-20.s3.amazonaws.com/123145730635304/attachments/25863fa3-94da-4898-8d55-c4df4184725a104.jpg?AWSAccessKeyId=AKIAJEXDXKNYCBUNCCCQ&Expires=1551013866&Signature=WbPbAnDDaNt7sqjG8dogKQgGdFg%3D",
+    "Score": "47.5%"
   },
   {
     "Name": "Diamond Ring",
@@ -174,8 +174,8 @@
       "CreateTime": "2019-02-23T07:28:53-08:00",
       "LastUpdatedTime": "2019-02-23T15:39:18-08:00"
     },
-    "Url": "https://intuit-qbo-prod-19.s3.amazonaws.com/123145730635304/attachments/85bd170b-2915-41b0-97f0-bab61ae9eafa101.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20190224T121254Z&X-Amz-SignedHeaders=host&X-Amz-Expires=900&X-Amz-Credential=AKIAJEXDXKNYCBUNCCCQ%2F20190224%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=09f410c3565f5634fd6963c6da45293446bfd5f7b6bd2002d939c4b4c79c9416",
-    "Score": "66.0%"
+    "Url": "https://intuit-qbo-prod-19.s3.amazonaws.com/123145730635304/attachments/85bd170b-2915-41b0-97f0-bab61ae9eafa101.jpg?AWSAccessKeyId=AKIAJEXDXKNYCBUNCCCQ&Expires=1551013866&Signature=5mTc26tvvq0KvC2ySOsKjez%2FXP0%3D",
+    "Score": "73.9%"
   },
   {
     "Name": "Pink Sapphire Ring",
@@ -219,8 +219,8 @@
       "CreateTime": "2019-02-23T06:14:52-08:00",
       "LastUpdatedTime": "2019-02-23T15:31:54-08:00"
     },
-    "Url": "https://intuit-qbo-prod-5.s3.amazonaws.com/123145730635304/attachments/2e8919ac-1b36-4fff-a4ad-74e26170e1d5NU14.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20190224T121254Z&X-Amz-SignedHeaders=host&X-Amz-Expires=900&X-Amz-Credential=AKIAJEXDXKNYCBUNCCCQ%2F20190224%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=990ba64feb13ffb6fc7853349cc6c74798c269346758596169426e591a2e97d5",
-    "Score": "66.3%"
+    "Url": "https://intuit-qbo-prod-5.s3.amazonaws.com/123145730635304/attachments/2e8919ac-1b36-4fff-a4ad-74e26170e1d5NU14.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20190224T125606Z&X-Amz-SignedHeaders=host&X-Amz-Expires=900&X-Amz-Credential=AKIAJEXDXKNYCBUNCCCQ%2F20190224%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=ee2805e11d413edc36eacf4749b97605305909e1e6d4b0682f75586c8f20ad18",
+    "Score": "74.5%"
   },
   {
     "Name": "Ruby Ring",
@@ -263,8 +263,8 @@
       "CreateTime": "2019-02-23T07:28:53-08:00",
       "LastUpdatedTime": "2019-02-23T15:31:54-08:00"
     },
-    "Url": "https://intuit-qbo-prod-5.s3.amazonaws.com/123145730635304/attachments/e5caa978-a6a6-4bf8-975c-cf8ea12ecbb4102.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20190224T121254Z&X-Amz-SignedHeaders=host&X-Amz-Expires=900&X-Amz-Credential=AKIAJEXDXKNYCBUNCCCQ%2F20190224%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=b8c735dcbdaf62cd376e80b299c4a4b95267525444e605014b40c68d3761071f",
-    "Score": "66.6%"
+    "Url": "https://intuit-qbo-prod-5.s3.amazonaws.com/123145730635304/attachments/e5caa978-a6a6-4bf8-975c-cf8ea12ecbb4102.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20190224T125606Z&X-Amz-SignedHeaders=host&X-Amz-Expires=899&X-Amz-Credential=AKIAJEXDXKNYCBUNCCCQ%2F20190224%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=800b8e52e91f15b058dda2c406bff311a52f2a6c093f0218f9d31093c6ec852d",
+    "Score": "74.9%"
   },
   {
     "Name": "Tanzanite Ring",
@@ -308,8 +308,8 @@
       "CreateTime": "2019-02-23T06:18:37-08:00",
       "LastUpdatedTime": "2019-02-23T15:37:06-08:00"
     },
-    "Url": "https://intuit-qbo-prod-5.s3.amazonaws.com/123145730635304/attachments/3c6c65df-6710-478e-bbf0-22f6685a8d1a107.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20190224T121254Z&X-Amz-SignedHeaders=host&X-Amz-Expires=899&X-Amz-Credential=AKIAJEXDXKNYCBUNCCCQ%2F20190224%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=ab6091b1b31440f58783bd5fb40d2203bf856428294904c6e9af2cf033d732ff",
-    "Score": "64.1%"
+    "Url": "https://intuit-qbo-prod-5.s3.amazonaws.com/123145730635304/attachments/3c6c65df-6710-478e-bbf0-22f6685a8d1a107.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20190224T125606Z&X-Amz-SignedHeaders=host&X-Amz-Expires=900&X-Amz-Credential=AKIAJEXDXKNYCBUNCCCQ%2F20190224%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=3e8f0b69e2b41a862e4679ca23a726896682d71cf8077252d93daea108d5277d",
+    "Score": "71.1%"
   },
   {
     "Name": "Wedding Band",
@@ -352,7 +352,7 @@
       "CreateTime": "2019-02-23T07:28:53-08:00",
       "LastUpdatedTime": "2019-02-23T15:38:03-08:00"
     },
-    "Url": "https://intuit-qbo-prod-17.s3.amazonaws.com/123145730635304/attachments/eca1f4ab-b0db-4de5-9b90-71689098d648103.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20190224T121254Z&X-Amz-SignedHeaders=host&X-Amz-Expires=900&X-Amz-Credential=AKIAJEXDXKNYCBUNCCCQ%2F20190224%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=0ba5f6522adc74f7e4b39f922a0e5f447e63da7baa8d9edfa499f5322ad8e5f6",
-    "Score": "56.4%"
+    "Url": "https://intuit-qbo-prod-17.s3.amazonaws.com/123145730635304/attachments/eca1f4ab-b0db-4de5-9b90-71689098d648103.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20190224T125606Z&X-Amz-SignedHeaders=host&X-Amz-Expires=900&X-Amz-Credential=AKIAJEXDXKNYCBUNCCCQ%2F20190224%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=6716315bde30068855f3f0f2dd639a4f89bd2348f361fb9d669e221752809fd3",
+    "Score": "59.6%"
   }
 ]

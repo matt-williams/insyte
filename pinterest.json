@@ -73,7 +73,7 @@
       "CreateTime": "2019-02-23T06:14:52-08:00",
       "LastUpdatedTime": "2019-02-23T15:31:54-08:00"
     },
-    "Url": "https://intuit-qbo-prod-5.s3.amazonaws.com/123145730635304/attachments/2e8919ac-1b36-4fff-a4ad-74e26170e1d5NU14.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20190224T124457Z&X-Amz-SignedHeaders=host&X-Amz-Expires=900&X-Amz-Credential=AKIAJEXDXKNYCBUNCCCQ%2F20190224%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=89ed2d5906d337b1af646a81e04784344a1824178e41de4d633398f8ada37722"
+    "Url": "https://intuit-qbo-prod-5.s3.amazonaws.com/123145730635304/attachments/2e8919ac-1b36-4fff-a4ad-74e26170e1d5NU14.jpg?AWSAccessKeyId=AKIAJEXDXKNYCBUNCCCQ&Expires=1551013875&Signature=nDqyNBFaYZLX8ancNaj4KaRju%2BU%3D"
   },
   {
     "Name": "Tanzanite Ring",
@@ -117,7 +117,7 @@
       "CreateTime": "2019-02-23T06:18:37-08:00",
       "LastUpdatedTime": "2019-02-23T15:37:06-08:00"
     },
-    "Url": "https://intuit-qbo-prod-5.s3.amazonaws.com/123145730635304/attachments/3c6c65df-6710-478e-bbf0-22f6685a8d1a107.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20190224T124457Z&X-Amz-SignedHeaders=host&X-Amz-Expires=900&X-Amz-Credential=AKIAJEXDXKNYCBUNCCCQ%2F20190224%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=3c634c42ed0069fbd316d82e05ba3d0b50c523b910bb7b8a1deae23460ebfd4c"
+    "Url": "https://intuit-qbo-prod-5.s3.amazonaws.com/123145730635304/attachments/3c6c65df-6710-478e-bbf0-22f6685a8d1a107.jpg?AWSAccessKeyId=AKIAJEXDXKNYCBUNCCCQ&Expires=1551013875&Signature=X55Y6oHNTDh8NDG42WvtzqKwBYs%3D"
   },
   {
     "Name": "Diamond Ring",
@@ -160,7 +160,7 @@
       "CreateTime": "2019-02-23T07:28:53-08:00",
       "LastUpdatedTime": "2019-02-23T15:39:18-08:00"
     },
-    "Url": "https://intuit-qbo-prod-19.s3.amazonaws.com/123145730635304/attachments/85bd170b-2915-41b0-97f0-bab61ae9eafa101.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20190224T124457Z&X-Amz-SignedHeaders=host&X-Amz-Expires=900&X-Amz-Credential=AKIAJEXDXKNYCBUNCCCQ%2F20190224%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=e9cf8df88e5857a6ea9774195be8ad50ddc11ab861b99348800dfec50b410889"
+    "Url": "https://intuit-qbo-prod-19.s3.amazonaws.com/123145730635304/attachments/85bd170b-2915-41b0-97f0-bab61ae9eafa101.jpg?AWSAccessKeyId=AKIAJEXDXKNYCBUNCCCQ&Expires=1551013875&Signature=B%2BV2KxLLYqZwUQbRThQH0KQ6vyo%3D"
   },
   {
     "Name": "Ruby Ring",
@@ -203,7 +203,7 @@
       "CreateTime": "2019-02-23T07:28:53-08:00",
       "LastUpdatedTime": "2019-02-23T15:31:54-08:00"
     },
-    "Url": "https://intuit-qbo-prod-5.s3.amazonaws.com/123145730635304/attachments/e5caa978-a6a6-4bf8-975c-cf8ea12ecbb4102.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20190224T124457Z&X-Amz-SignedHeaders=host&X-Amz-Expires=899&X-Amz-Credential=AKIAJEXDXKNYCBUNCCCQ%2F20190224%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=e49998c1519b6d1d0e712179729594a5091aa053ec26cb7bbc893e3300d50b74"
+    "Url": "https://intuit-qbo-prod-5.s3.amazonaws.com/123145730635304/attachments/e5caa978-a6a6-4bf8-975c-cf8ea12ecbb4102.jpg?AWSAccessKeyId=AKIAJEXDXKNYCBUNCCCQ&Expires=1551013875&Signature=rCyi%2FeQi1iWAHD4Dd0wSQLUsT08%3D"
   },
   {
     "Name": "Wedding Band",
@@ -246,7 +246,7 @@
       "CreateTime": "2019-02-23T07:28:53-08:00",
       "LastUpdatedTime": "2019-02-23T15:38:03-08:00"
     },
-    "Url": "https://intuit-qbo-prod-17.s3.amazonaws.com/123145730635304/attachments/eca1f4ab-b0db-4de5-9b90-71689098d648103.jpg?AWSAccessKeyId=AKIAJEXDXKNYCBUNCCCQ&Expires=1551013197&Signature=S%2Ftb47V7GpNmdZc%2BKtnUS2nsK6M%3D"
+    "Url": "https://intuit-qbo-prod-17.s3.amazonaws.com/123145730635304/attachments/eca1f4ab-b0db-4de5-9b90-71689098d648103.jpg?AWSAccessKeyId=AKIAJEXDXKNYCBUNCCCQ&Expires=1551013875&Signature=8XbtiW2xDR6XHMVbzFl0v9wmwjo%3D"
   },
   {
     "Name": "Necklace",
@@ -289,7 +289,7 @@
       "CreateTime": "2019-02-23T07:28:53-08:00",
       "LastUpdatedTime": "2019-02-23T15:31:54-08:00"
     },
-    "Url": "https://intuit-qbo-prod-20.s3.amazonaws.com/123145730635304/attachments/25863fa3-94da-4898-8d55-c4df4184725a104.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20190224T124457Z&X-Amz-SignedHeaders=host&X-Amz-Expires=900&X-Amz-Credential=AKIAJEXDXKNYCBUNCCCQ%2F20190224%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=12816c95834ad2db31138fd6bea1b71baf560ded598a5ee74b70c7895ab5d72e"
+    "Url": "https://intuit-qbo-prod-20.s3.amazonaws.com/123145730635304/attachments/25863fa3-94da-4898-8d55-c4df4184725a104.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20190224T125615Z&X-Amz-SignedHeaders=host&X-Amz-Expires=900&X-Amz-Credential=AKIAJEXDXKNYCBUNCCCQ%2F20190224%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=0dcd540586ca814b7988540da354eeec05dbb7f40b97ba11c041bf229a3cf38e"
   },
   {
     "Name": "Bracelet",
@@ -332,7 +332,7 @@
       "CreateTime": "2019-02-23T07:28:53-08:00",
       "LastUpdatedTime": "2019-02-23T15:31:54-08:00"
     },
-    "Url": "https://intuit-qbo-prod-28.s3.amazonaws.com/123145730635304/attachments/6e82145d-df44-432f-8059-3db4ddc8d60d105.jpg?AWSAccessKeyId=AKIAJEXDXKNYCBUNCCCQ&Expires=1551013197&Signature=NlW7mznCjaBvo9Zwh79GlXfFufU%3D",
+    "Url": "https://intuit-qbo-prod-28.s3.amazonaws.com/123145730635304/attachments/6e82145d-df44-432f-8059-3db4ddc8d60d105.jpg?AWSAccessKeyId=AKIAJEXDXKNYCBUNCCCQ&Expires=1551013875&Signature=4KvNaYGmhT%2Bh50eFDWNnLI61kEQ%3D",
     "Revenue": 5800,
     "TurnoverRatio": "10%"
   },
@@ -377,6 +377,6 @@
       "CreateTime": "2019-02-23T07:28:54-08:00",
       "LastUpdatedTime": "2019-02-23T15:31:54-08:00"
     },
-    "Url": "https://intuit-qbo-prod-27.s3.amazonaws.com/123145730635304/attachments/c1f3fa7b-491e-43ee-b400-2cea277c3607106.jpg?AWSAccessKeyId=AKIAJEXDXKNYCBUNCCCQ&Expires=1551013197&Signature=OSN9BO2WUnhfWzC95PEji7djN24%3D"
+    "Url": "https://intuit-qbo-prod-27.s3.amazonaws.com/123145730635304/attachments/c1f3fa7b-491e-43ee-b400-2cea277c3607106.jpg?AWSAccessKeyId=AKIAJEXDXKNYCBUNCCCQ&Expires=1551013875&Signature=dIOQt4cCKyYEQECr%2BAd0pqrm%2Fw0%3D"
   }
 ]
