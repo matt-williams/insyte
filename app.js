@@ -26,6 +26,26 @@ async function getRssImages(feedUrl) {
   return imageUrls;
 }
 
+async function getScores(feedUrl) { 
+  var urls = await getRssImages(feedUrl);
+  var scoreById = {};
+  await Promise.all(urls.map(url =>
+    clarifai.inputs.search([{"input":{"url": url, 'metadata': {'quickbooks_realm_id': process.env.QUICKBOOKS_REALM_ID}}}]).then(results => {
+      if (results.status.code != 10000) {
+        return console.log(`Error while searching for ${url}: ${results.status}`);
+      }
+      results.hits.forEach(result => {
+        scoreById[result.input.id] = (scoreById[result.input.id] || 0) + result.score;
+      });
+//      console.log(results.hits.map(result => [result.input.id, result.score]));
+    })
+  ));
+  for (var id in scoreById) {
+    scoreById[id] /= urls.length;
+  }
+  return scoreById;
+}
+
 const qbo = new QuickBooks(process.env.QUICKBOOKS_CLIENT_ID,
                            process.env.QUICKBOOKS_CLIENT_SECRET,
                            process.env.QUICKBOOKS_ACCESS_TOKEN,
@@ -39,27 +59,8 @@ const qbo = new QuickBooks(process.env.QUICKBOOKS_CLIENT_ID,
 const clarifai = new Clarifai.App({
   apiKey: process.env.CLARIFAI_API_KEY
 });
- 
-getRssImages('https://www.pinterest.co.uk/matwilliams2875/feed.rss').then(urls => {
-  var scoreById = {};
-  Promise.all(urls.map(url =>
-    clarifai.inputs.search([{"input":{"url": url, 'metadata': {'quickbooks_realm_id': process.env.QUICKBOOKS_REALM_ID}}}]).then(results => {
-      if (results.status.code != 10000) {
-        return console.log(`Error while searching for ${url}: ${results.status}`);
-      }
-      results.hits.forEach(result => {
-        scoreById[result.input.id] = (scoreById[result.input.id] || 0) + result.score;
-      });
-      console.log(results.hits.map(result => [result.input.id, result.score]));
-    })
-  )).then(() => {
-    for (var id in scoreById) {
-      scoreById[id] /= urls.length;
-    }
-    console.log(scoreById);
-    return scoreById;
-  })
-}, err => console.log(err));
+
+//getScores('https://www.pinterest.co.uk/matwilliams2875/feed.rss').then(scores => console.log(scores));
 
 const app = express();
 app.use(express.static('static'))
@@ -84,40 +85,38 @@ app.get('/', (req, res) => {
       }
     });
 
-    clarifai.inputs.list({perPage: 1000}).then(inputs => {
-      var inputsById = {};
-      inputs.forEach(input => {
-        inputsById[input.id] = input;
+    qbo.findItems((err, items) => {
+      if (err) {
+        return res.status(500).json(err);
+      }
+
+      var items = items.QueryResponse.Item;
+      items = items.filter(item => item.Type == 'Inventory');
+      items.forEach(item => {
+        item.Url = itemUrls[item.Id];
       });
 
-      qbo.findItems((err, items) => {
-        if (err) {
-          return res.status(500).json(err);
-        }
-
-        var inputs = [];
-        items.QueryResponse.Item.forEach(item => {
-          var id = item.Id;
-          var url = itemUrls[id];
-          if (url && !inputsById[id]) {
-            inputs.push({'id': id, 'url': url, 'metadata': {'quickbooks_realm_id': process.env.QUICKBOOKS_REALM_ID}});
-          }
-        });
-
+      clarifai.inputs.list({perPage: 1000}).then(oldInputs => {
+        var oldInputsById = {};
+        for (var ii = 0; ii < oldInputs.length; ii++) {
+          var oldInput = oldInputs[ii];
+          oldInputsById[oldInput.id] = oldInput;
+        };
+  
+        var inputs = items.filter(item => !!item.Url && !oldInputsById[item.Id]).map(item => ({'id': item.Id, 'url': item.Url, 'metadata': {'quickbooks_realm_id': process.env.QUICKBOOKS_REALM_ID}}));
         if (inputs.length > 0) {
-          console.log("Creating", inputs);
+          console.log("Adding to Clarifai", inputs);
           clarifai.inputs.create(inputs).then(() => {
-            res.render('attachables', {'items': inputs});
+            res.render('attachables', {'items': items});
           }, err => {
             res.status(500).json(err);
           });
         } else {
-          res.render('attachables', {'items': inputs});
+          res.render('attachables', {'items': items});
         }
-
+      }, err => {
+        res.status(500).json(err);
       });
-    }, err => {
-      res.status(500).json(err);
     });
   });
 });
