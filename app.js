@@ -15,7 +15,7 @@ async function getRssImages(feedUrl) {
   feed.items.forEach(item => {
     function findImages(el) {
       if (el.tagName == 'img') {
-        el.attrs.filter((attr) => attr.name == 'src').map((attr) => attr.value).forEach((imageUrl) => imageUrls.push(imageUrl));
+        el.attrs.filter(attr => attr.name == 'src').map(attr => attr.value).forEach(imageUrl => imageUrls.push(imageUrl));
       }
       if (el.childNodes) {
         el.childNodes.forEach(findImages);
@@ -40,13 +40,26 @@ const clarifai = new Clarifai.App({
   apiKey: process.env.CLARIFAI_API_KEY
 });
  
-        getRssImages('https://www.pinterest.co.uk/matwilliams2875/feed.rss').then((urls) => {
-console.log(urls);
-          clarifai.inputs.search([{"input":{"url": urls[0], 'metadata': {'quickbooks_realm_id': process.env.QUICKBOOKS_REALM_ID}}}]).then((results) => {
-            console.log(results.status);
-            console.log(results.hits);
-          })
-        }, (err) => console.log(err));
+getRssImages('https://www.pinterest.co.uk/matwilliams2875/feed.rss').then(urls => {
+  var scoreById = {};
+  Promise.all(urls.map(url =>
+    clarifai.inputs.search([{"input":{"url": url, 'metadata': {'quickbooks_realm_id': process.env.QUICKBOOKS_REALM_ID}}}]).then(results => {
+      if (results.status.code != 10000) {
+        return console.log(`Error while searching for ${url}: ${results.status}`);
+      }
+      results.hits.forEach(result => {
+        scoreById[result.input.id] = (scoreById[result.input.id] || 0) + result.score;
+      });
+      console.log(results.hits.map(result => [result.input.id, result.score]));
+    })
+  )).then(() => {
+    for (var id in scoreById) {
+      scoreById[id] /= urls.length;
+    }
+    console.log(scoreById);
+    return scoreById;
+  })
+}, err => console.log(err));
 
 const app = express();
 app.use(express.static('static'))
@@ -61,9 +74,9 @@ app.get('/', (req, res) => {
     }
 
     var itemUrls = {};
-    attachables.QueryResponse.Attachable.forEach((attachable) => {
+    attachables.QueryResponse.Attachable.forEach(attachable => {
       if (attachable.AttachableRef) {
-        attachable.AttachableRef.forEach((attachableRef) => {
+        attachable.AttachableRef.forEach(attachableRef => {
           if (attachableRef.EntityRef.type == 'Item') {
             itemUrls[attachableRef.EntityRef.value] = attachable.TempDownloadUri;
           }
@@ -71,9 +84,9 @@ app.get('/', (req, res) => {
       }
     });
 
-    clarifai.inputs.list({perPage: 1000}).then((inputs) => {
+    clarifai.inputs.list({perPage: 1000}).then(inputs => {
       var inputsById = {};
-      inputs.forEach((input) => {
+      inputs.forEach(input => {
         inputsById[input.id] = input;
       });
 
@@ -83,7 +96,7 @@ app.get('/', (req, res) => {
         }
 
         var inputs = [];
-        items.QueryResponse.Item.forEach((item) => {
+        items.QueryResponse.Item.forEach(item => {
           var id = item.Id;
           var url = itemUrls[id];
           if (url && !inputsById[id]) {
@@ -95,7 +108,7 @@ app.get('/', (req, res) => {
           console.log("Creating", inputs);
           clarifai.inputs.create(inputs).then(() => {
             res.render('attachables', {'items': inputs});
-          }, (err) => {
+          }, err => {
             res.status(500).json(err);
           });
         } else {
@@ -103,7 +116,7 @@ app.get('/', (req, res) => {
         }
 
       });
-    }, (err) => {
+    }, err => {
       res.status(500).json(err);
     });
   });
