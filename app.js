@@ -18,7 +18,7 @@ const expressHandlebars = require('express-handlebars');
 //const clarifai = new Clarifai.App({
 //  apiKey: process.env.CLARIFAI_API_KEY
 //});
- 
+
 const app = express();
 app.use(express.static('static'))
 app.engine('handlebars', expressHandlebars({defaultLayout: 'main'}));
