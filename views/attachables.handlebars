@@ -1,4 +1,119 @@
-{{#items}}
-<h1>{{id}}</h1>
-<img src="{{url}}"></img></p>
-{{/items}}
+<nav class="navbar navbar-light bg-light static-top">
+  <div class="container">
+    <img src="logo.png" width="100px" />
+    <div align="right">
+      <a>Pinterest</a>
+      <a class="btn btn-primary" href="#">Refresh</a>
+    </div>
+
+  </div>
+</nav>
+
+
+
+<div class="container">
+  <div class="panel-heading" align="right">
+      <h3 class="panel-title">Filter</h3>
+      <div class="pull-right">
+          <button class="btn btn-default btn-xs btn-filter"><span class="glyphicon glyphicon-filter"></span> Filter</button>
+      </div>
+  </div>
+  <table class="table table-striped table-bordered table-hover">
+    <thead>
+      <tr>
+        <th scope="col">SKU</th>
+        <th scope="col">Item Name </th>
+        <th scope="col">Image</th>
+        <th scope="col">Revenue</th>
+        <th scope="col">Stock Turnover Ratio</th>
+        <th scope="col">Social Media Ranking</th>
+        <th scope="col">Inventory</th>
+        <th scope="col">Cost of Holding</th>
+        <th scope="col">Unit Sold</th>
+        <th scope="col">Profit</th>
+        <th scope="col">Recommended Action</th>
+        <th>Quantity</th>
+        <th>Confirm</th>
+        <th scope="col">Buy</th>
+      </tr>
+    </thead>
+    <tbody>
+
+
+      <tr>
+
+      {{#items}}
+
+      <td>{{id}}</td>
+      <td></td>
+      <td><img class="img-responsive" src="{{url}}"></img></p></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td><input type="quantity" class="form-control" id="quantity" placeholder="" name="quantity"></td>
+      <td><input type="checkbox" class="checkthis" /></td>
+      <td><a class="btn btn-primary" href="#">Buy</a></td>
+      </tr>
+      {{/items}}
+    </tbody>
+  </table>
+
+  <div align="right">
+    <a>Get All Products</a>
+    <input type="checkbox" class="checkthis" />
+    <button type="submit" class="btn btn-primary">Buy All Product</button>
+  </div>
+
+</div>
+
+<!-- Footer -->
+<footer class="footer bg-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
+        <ul class="list-inline mb-2">
+          <li class="list-inline-item">
+            <a href="#">About</a>
+          </li>
+          <li class="list-inline-item">&sdot;</li>
+          <li class="list-inline-item">
+            <a href="#">Contact</a>
+          </li>
+          <li class="list-inline-item">&sdot;</li>
+          <li class="list-inline-item">
+            <a href="#">Terms of Use</a>
+          </li>
+          <li class="list-inline-item">&sdot;</li>
+          <li class="list-inline-item">
+            <a href="#">Privacy Policy</a>
+          </li>
+        </ul>
+        <p class="text-muted small mb-4 mb-lg-0">&copy; Your Website 2019. All Rights Reserved.</p>
+      </div>
+      <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
+        <ul class="list-inline mb-0">
+          <li class="list-inline-item mr-3">
+            <a href="#">
+              <i class="fab fa-facebook fa-2x fa-fw"></i>
+            </a>
+          </li>
+          <li class="list-inline-item mr-3">
+            <a href="#">
+              <i class="fab fa-twitter-square fa-2x fa-fw"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#">
+              <i class="fab fa-instagram fa-2x fa-fw"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>

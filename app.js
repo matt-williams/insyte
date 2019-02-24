@@ -49,6 +49,7 @@ console.log(urls);
         }, (err) => console.log(err));
 
 const app = express();
+app.use(express.static('static'))
 app.engine('handlebars', expressHandlebars({defaultLayout: 'main'}));
 app.set('view engine', 'handlebars');
 app.set('views', './views');
