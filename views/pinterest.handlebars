@@ -19,7 +19,7 @@
       <hr class="sidebar-divider my-0">
 
       <!-- Nav Item - Dashboard -->
-      <li class="nav-item active collapsed">
+      <li class="nav-item collapsed">
         <a class="nav-link" href="#">
           <i class="fas fa-fw fa-tachometer-alt"></i>
           <span>Dashboard</span></a>
@@ -34,17 +34,17 @@
       </div>
 
       <!-- Nav Item - Charts -->
-      <li class="nav-item">
+      <li class="nav-item active">
         <a class="nav-link" href="pinterest.html">
           <i class="fas fa-fw fa-chart-area"></i>
-          <span>Charts</span></a>
+          <span>Analytics</span></a>
       </li>
 
       <!-- Nav Item - Tables -->
       <li class="nav-item">
         <a class="nav-link" href="pinterest.html">
           <i class="fas fa-fw fa-table"></i>
-          <span>Analytics</span></a>
+          <span>History</span></a>
       </li>
 
 
@@ -258,8 +258,8 @@
 
           <!-- Page Heading -->
           <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
-            <a href="/pinterest.html" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"> </i>Pinterest Analytics</a>
+            <h1 class="h3 mb-0 text-gray-800">Analytics</h1>
+            <a href="/pinterest.html" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"> </i>Refresh</a>
           </div>
 
           <!-- Content Row -->
@@ -267,7 +267,7 @@
           <!-- DataTales Example -->
           <div class="card shadow mb-4">
             <div class="card-header py-3">
-              <h6 class="m-0 font-weight-bold text-primary">Report</h6>
+              <h6 class="m-0 font-weight-bold text-primary">Report - <a href="https://www.pinterest.co.uk/matwilliams2875/boards">Matwilliams</a></h6>
             </div>
             <div class="card-body">
               <div class="table-responsive">
@@ -275,47 +275,31 @@
                   <thead>
                     <tr>
 
-                        <th scope="col">SKU</th>
-                        <th scope="col">Item Name </th>
-                        <th scope="col">Image</th>
-                        <th scope="col">Revenue</th>
-                        <th scope="col">Stock Turnover Ratio</th>
-                        <th scope="col">Social Media Score</th>
-                        <th scope="col">Inventory</th>
-                        <th scope="col">Cost of Holding</th>
-                        <th scope="col">Unit Sold</th>
-                        <th scope="col">Profit</th>
-                        <th scope="col">Unit Price</th>
-                        <th scope="col">Recommended Action</th>
-                        <th scope="col">Quantity</th>
-                        <th scope="col">Confirm</th>
-                        <th scope="col">Restock</th>
-
+                        
+                        
+                        <th scope="col"></th>
+{{#items}}
+                        <th scope="col"><img width="64" height="64" class="img-responsive" src="{{Url}}" alt="{{Sku}} - {{Name}}"></img></th>
+{{/items}}
                     </tr>
                   </thead>
 
                   <tbody>
+{{#pinterest.results}}
                     <tr>
-
-                    {{#items}}
-
-                    <td>{{Sku}}</td>
-                    <td>{{Name}}</td>
-                    <td><img width="64" height="64" class="img-responsive" src="{{Url}}"></img></p></td>
-                    <td>{{Revenue}}</td>
-                    <td>{{StockTurnoverRatio}}</td>
-                    <td>{{Score}}</td>
-                    <td>{{Inventory}}</td>
-                    <td>{{CostOfHolding}}</td>
-                    <td>{{UnitSold}}</td>
-                    <td>{{Profit}}</td>
-                    <td>{{UnitPrice}}</td>
-                    <td>{{Recommendation}}</td>
-                    <td><input type="quantity" class="form-control" id="quantity" placeholder="" name="quantity"></td>
-                    <td><input type="checkbox" class="checkthis" /></td>
-                    <td><a class="btn btn-primary" href="purchase.html">Restock</a></td>
+                      <td align="center"><img class="img-responsive" src="{{url}}" width="64" height="64"></td>
+{{#each scores}}
+                      <td align="center">{{this}}</td>
+{{/each}}
                     </tr>
-                    {{/items}}
+{{/pinterest.results}}
+                    <tr>
+                    
+                      <td align="center">Average Score<p></p></td>
+{{#each pinterest.totals}}
+                      <td align="center">{{this}}</td>
+{{/each}}
+                    </tr>
                   </tbody>
                 </table>
               </div>
@@ -323,12 +307,12 @@
             <div align="right">
               <a>Confirm</a>
               <input type="checkbox" class="checkthis" />
-              <a class="btn btn-primary" href="purchase.html">Restock All Product</a>
+              <a class="btn btn-primary" href="#">Restock All Product</a>
             </div>
 
           </div>
 
-          </div>
+        </div>
 
 
 
@@ -360,6 +344,11 @@
       </div>
     </div>
   </div>
+
+
+
+
+
 
 
 

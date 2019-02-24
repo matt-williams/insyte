@@ -1,44 +1,98 @@
 [
   {
-    "Name": "Bracelet",
+    "Recommendation": "Increase price, differentiate product, reduce purchase costs",
+    "Profit": "5050",
+    "Sku": "101",
+    "Id": "34",
+    "Name": "Diamond Ring",
+    "Revenue": "101000",
+    "StockTurnoverRatio": "110.2",
+    "Inventory": "9",
+    "CostOfHolding": "1832",
+    "UnitSold": "101"
+  },
+  {
+    "Recommendation": "None",
+    "Profit": "3600",
+    "Sku": "102",
+    "Id": "35",
+    "Name": "Ruby Ring",
+    "Revenue": "12600",
+    "StockTurnoverRatio": "10.8",
+    "Inventory": "91",
+    "CostOfHolding": "2328",
+    "UnitSold": "9"
+  },
+  {
+    "Recommendation": "Grow product range further, buy new stock",
+    "Profit": "21000",
+    "Sku": "103",
+    "Id": "36",
+    "Name": "Wedding Band",
+    "Revenue": "73500",
+    "StockTurnoverRatio": "81.6",
+    "Inventory": "5",
+    "CostOfHolding": "1800",
+    "UnitSold": "105"
+  },
+  {
+    "Recommendation": "Reduce inventory",
+    "Profit": "1200",
+    "Sku": "104",
+    "Id": "37",
+    "Name": "Necklace",
+    "Revenue": "12000",
+    "StockTurnoverRatio": "10.2",
+    "Inventory": "94",
+    "CostOfHolding": "2352",
+    "UnitSold": "6"
+  },
+  {
+    "Recommendation": "Reduce inventory",
+    "Profit": "6800",
     "Sku": "105",
     "Id": "38",
-    "Revenue": 5800,
-    "TurnoverRatio": "10%"
+    "Name": "Bracelet",
+    "Revenue": "14800",
+    "StockTurnoverRatio": "12.7",
+    "Inventory": "90",
+    "CostOfHolding": "2320",
+    "UnitSold": "10"
   },
   {
-    "Name": "Earrings",
+    "Recommendation": "None",
+    "Profit": "3750",
     "Sku": "106",
-    "Id": "39"
+    "Id": "39",
+    "Name": "Earrings",
+    "Revenue": "12000",
+    "StockTurnoverRatio": "10.5",
+    "Inventory": "85",
+    "CostOfHolding": "2280",
+    "UnitSold": "15"
   },
   {
-    "Name": "Necklace",
-    "Sku": "104",
-    "Id": "37"
-  },
-  {
-    "Name": "Diamond Ring",
-    "Sku": "101",
-    "Id": "34"
-  },
-  {
-    "Name": "Pink Sapphire Ring",
-    "Sku": "108",
-    "Id": "32"
-  },
-  {
-    "Name": "Ruby Ring",
-    "Sku": "102",
-    "Id": "35"
-  },
-  {
-    "Name": "Tanzanite Ring",
+    "Recommendation": "Grow product range further, buy new stock",
+    "Profit": "18000",
     "Sku": "107",
-    "Id": "33"
+    "Id": "33",
+    "Name": "Tanzanite Ring",
+    "Revenue": "54000",
+    "StockTurnoverRatio": "56.2",
+    "Inventory": "40",
+    "CostOfHolding": "1920",
+    "UnitSold": "60"
   },
   {
-    "Name": "Wedding Band",
-    "Sku": "103",
-    "Id": "36"
+    "Recommendation": "Grow product range further, buy new stock",
+    "Profit": "60000",
+    "Sku": "108",
+    "Id": "32",
+    "Name": "Pink Sapphire Ring",
+    "Revenue": "150000",
+    "StockTurnoverRatio": "166.6",
+    "Inventory": "25",
+    "CostOfHolding": "1800",
+    "UnitSold": "75"
   }
 ]
