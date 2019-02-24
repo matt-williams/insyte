@@ -61,25 +61,21 @@ app.get('/', (req, res) => {
     }
 
     var itemUrls = {};
-    attachables = attachables.QueryResponse.Attachable;
-    for (var ii = 0; ii < attachables.length; ii++) {
-      var attachable = attachables[ii];
+    attachables.QueryResponse.Attachable.forEach((attachable) => {
       if (attachable.AttachableRef) {
-        for (var jj = 0; jj < attachable.AttachableRef.length; jj++) {
-          var attachableRef = attachable.AttachableRef[jj];
+        attachable.AttachableRef.forEach((attachableRef) => {
           if (attachableRef.EntityRef.type == 'Item') {
             itemUrls[attachableRef.EntityRef.value] = attachable.TempDownloadUri;
           }
-        }
+        });
       }
-    }
+    });
 
     clarifai.inputs.list({perPage: 1000}).then((inputs) => {
       var inputsById = {};
-      for (var ii = 0; ii < inputs.length; ii++) {
-        var input = inputs[ii];
+      inputs.forEach((input) => {
         inputsById[input.id] = input;
-      }
+      });
 
       qbo.findItems((err, items) => {
         if (err) {
@@ -87,15 +83,13 @@ app.get('/', (req, res) => {
         }
 
         var inputs = [];
-        items = items.QueryResponse.Item;
-        for (var ii = 0; ii < items.length; ii++) {
-          var item = items[ii];
+        items.QueryResponse.Item.forEach((item) => {
           var id = item.Id;
           var url = itemUrls[id];
           if (url && !inputsById[id]) {
             inputs.push({'id': id, 'url': url, 'metadata': {'quickbooks_realm_id': process.env.QUICKBOOKS_REALM_ID}});
           }
-        }
+        });
 
         if (inputs.length > 0) {
           console.log("Creating", inputs);
