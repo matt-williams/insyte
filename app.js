@@ -70,6 +70,17 @@ function getItems() {
   });
 }
 
+function getReport() {
+  return new Promise((resolve, reject) => {
+    qbo.reportGeneralLedgerDetail((err, report) => {
+      if (err) {
+        return reject(err);
+      } 
+      resolve(report);
+    });
+  });
+}
+
 function getAttachables() {
   return new Promise((resolve, reject) => {
     qbo.findAttachables((err, attachables) => {
@@ -79,6 +90,23 @@ function getAttachables() {
       resolve(attachables.QueryResponse.Attachable);
     });
   });
+}
+
+function augmentItems(items) {
+  const augmentationItems = require('./augmentation-items.json');
+  var augmentationItemsById = {};
+  augmentationItems.forEach(augmentationItem => {
+    augmentationItemsById[augmentationItem.Id] = augmentationItem;
+  });
+  items.forEach(item => {
+    var augmentationItem = augmentationItemsById[item.Id];
+    if (augmentationItem) {
+      for (var key in augmentationItem) {
+        item[key] = augmentationItem[key];
+      }
+    }
+  });
+  return items;
 }
 
 async function getItemsWithAttachables() {
@@ -102,6 +130,8 @@ async function getItemsWithAttachables() {
     item.Url = itemUrls[item.Id];
   });
 
+  items = augmentItems(items);
+
   return items;
 }
 
@@ -119,6 +149,7 @@ app.get('/report.html', async (req, res) => {
     items = await getItemsWithAttachables();
     res.render('attachables', {'items': items});
   } catch (err) {
+    console.log(err);
     res.status(500).json(err);
   }
 });
@@ -147,6 +178,7 @@ app.get('/report2.html', async (req, res) => {
     fs.writeFile('items.json', JSON.stringify(items, null, 2), (err) => {if (err) {console.log(err)}});
     res.render('attachables', {'items': items});
   } catch (err) {
+    console.log(err);
     res.status(500).json(err);
   }
 });

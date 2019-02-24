@@ -40,7 +40,9 @@
       "CreateTime": "2019-02-23T07:28:53-08:00",
       "LastUpdatedTime": "2019-02-23T15:31:54-08:00"
     },
-    "Url": "https://intuit-qbo-prod-28.s3.amazonaws.com/123145730635304/attachments/6e82145d-df44-432f-8059-3db4ddc8d60d105.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20190224T104935Z&X-Amz-SignedHeaders=host&X-Amz-Expires=899&X-Amz-Credential=AKIAJEXDXKNYCBUNCCCQ%2F20190224%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=4c8f0343a3f0b079592e3dfc203443ff4b75886869ea7c55a23b8189aa976106",
+    "Url": "https://intuit-qbo-prod-28.s3.amazonaws.com/123145730635304/attachments/6e82145d-df44-432f-8059-3db4ddc8d60d105.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20190224T113519Z&X-Amz-SignedHeaders=host&X-Amz-Expires=899&X-Amz-Credential=AKIAJEXDXKNYCBUNCCCQ%2F20190224%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=8c871b65199d0a677c922a971e56dbdec0cb2ce192cfdffea6ba9c5f87d25a05",
+    "Revenue": 5800,
+    "TurnoverRatio": "10%",
     "Score": "45.2%"
   },
   {
@@ -84,7 +86,7 @@
       "CreateTime": "2019-02-23T07:28:54-08:00",
       "LastUpdatedTime": "2019-02-23T15:31:54-08:00"
     },
-    "Url": "https://intuit-qbo-prod-27.s3.amazonaws.com/123145730635304/attachments/c1f3fa7b-491e-43ee-b400-2cea277c3607106.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20190224T104935Z&X-Amz-SignedHeaders=host&X-Amz-Expires=900&X-Amz-Credential=AKIAJEXDXKNYCBUNCCCQ%2F20190224%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=a8ee221c5ef20dc08363a9c423910003da846e4df52b5e2d497130728ab332c9",
+    "Url": "https://intuit-qbo-prod-27.s3.amazonaws.com/123145730635304/attachments/c1f3fa7b-491e-43ee-b400-2cea277c3607106.jpg?AWSAccessKeyId=AKIAJEXDXKNYCBUNCCCQ&Expires=1551009019&Signature=sjFmSXmXkvD6bI9QFrz5vT6QGrs%3D",
     "Score": "55.5%"
   },
   {
@@ -128,7 +130,7 @@
       "CreateTime": "2019-02-23T07:28:53-08:00",
       "LastUpdatedTime": "2019-02-23T15:31:54-08:00"
     },
-    "Url": "https://intuit-qbo-prod-20.s3.amazonaws.com/123145730635304/attachments/25863fa3-94da-4898-8d55-c4df4184725a104.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20190224T104935Z&X-Amz-SignedHeaders=host&X-Amz-Expires=899&X-Amz-Credential=AKIAJEXDXKNYCBUNCCCQ%2F20190224%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=c40e379f45ecc0304e8b97f823a75934f4d0a51ae25a4c63b7c7a9c181634210",
+    "Url": "https://intuit-qbo-prod-20.s3.amazonaws.com/123145730635304/attachments/25863fa3-94da-4898-8d55-c4df4184725a104.jpg?AWSAccessKeyId=AKIAJEXDXKNYCBUNCCCQ&Expires=1551009019&Signature=%2Fvcg8mD3Cp5yYAggrzcexn3MI2M%3D",
     "Score": "48.3%"
   },
   {
@@ -172,7 +174,7 @@
       "CreateTime": "2019-02-23T07:28:53-08:00",
       "LastUpdatedTime": "2019-02-23T15:39:18-08:00"
     },
-    "Url": "https://intuit-qbo-prod-19.s3.amazonaws.com/123145730635304/attachments/85bd170b-2915-41b0-97f0-bab61ae9eafa101.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20190224T104935Z&X-Amz-SignedHeaders=host&X-Amz-Expires=900&X-Amz-Credential=AKIAJEXDXKNYCBUNCCCQ%2F20190224%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=dbfdba89fe19a31af7b67988daa608e55eb1cd4a2aaa59b05954f3c4c82a6e7d",
+    "Url": "https://intuit-qbo-prod-19.s3.amazonaws.com/123145730635304/attachments/85bd170b-2915-41b0-97f0-bab61ae9eafa101.jpg?AWSAccessKeyId=AKIAJEXDXKNYCBUNCCCQ&Expires=1551009019&Signature=APfulg7QCNpXVsBt%2B3xyoLQrmOc%3D",
     "Score": "66.0%"
   },
   {
@@ -217,7 +219,7 @@
       "CreateTime": "2019-02-23T06:14:52-08:00",
       "LastUpdatedTime": "2019-02-23T15:31:54-08:00"
     },
-    "Url": "https://intuit-qbo-prod-5.s3.amazonaws.com/123145730635304/attachments/2e8919ac-1b36-4fff-a4ad-74e26170e1d5NU14.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20190224T104935Z&X-Amz-SignedHeaders=host&X-Amz-Expires=900&X-Amz-Credential=AKIAJEXDXKNYCBUNCCCQ%2F20190224%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=ade206b4fda1e659dc8493678695b5fdb4df2e92308448826468cff5668e3015",
+    "Url": "https://intuit-qbo-prod-5.s3.amazonaws.com/123145730635304/attachments/2e8919ac-1b36-4fff-a4ad-74e26170e1d5NU14.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20190224T113519Z&X-Amz-SignedHeaders=host&X-Amz-Expires=900&X-Amz-Credential=AKIAJEXDXKNYCBUNCCCQ%2F20190224%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=3e92497414a37739910aec2f5be9e3eebfca6827d3e5d0adfcdf14a5df12d8ef",
     "Score": "66.3%"
   },
   {
@@ -261,7 +263,7 @@
       "CreateTime": "2019-02-23T07:28:53-08:00",
       "LastUpdatedTime": "2019-02-23T15:31:54-08:00"
     },
-    "Url": "https://intuit-qbo-prod-5.s3.amazonaws.com/123145730635304/attachments/e5caa978-a6a6-4bf8-975c-cf8ea12ecbb4102.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20190224T104935Z&X-Amz-SignedHeaders=host&X-Amz-Expires=900&X-Amz-Credential=AKIAJEXDXKNYCBUNCCCQ%2F20190224%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=2e6b65be34edd407d0b9d10a19579e34d254247145fa5fbe358999c1e4ccc08c",
+    "Url": "https://intuit-qbo-prod-5.s3.amazonaws.com/123145730635304/attachments/e5caa978-a6a6-4bf8-975c-cf8ea12ecbb4102.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20190224T113519Z&X-Amz-SignedHeaders=host&X-Amz-Expires=900&X-Amz-Credential=AKIAJEXDXKNYCBUNCCCQ%2F20190224%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=1a12731f9429969b7eb648f9cdb7c26334a4219e177533e8494297734ce3efc6",
     "Score": "66.6%"
   },
   {
@@ -306,7 +308,7 @@
       "CreateTime": "2019-02-23T06:18:37-08:00",
       "LastUpdatedTime": "2019-02-23T15:37:06-08:00"
     },
-    "Url": "https://intuit-qbo-prod-5.s3.amazonaws.com/123145730635304/attachments/3c6c65df-6710-478e-bbf0-22f6685a8d1a107.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20190224T104935Z&X-Amz-SignedHeaders=host&X-Amz-Expires=900&X-Amz-Credential=AKIAJEXDXKNYCBUNCCCQ%2F20190224%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=76c4486550f74d8777f044ee30d7537ffabf42a6453e35a278e1e0158fdbb255",
+    "Url": "https://intuit-qbo-prod-5.s3.amazonaws.com/123145730635304/attachments/3c6c65df-6710-478e-bbf0-22f6685a8d1a107.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20190224T113519Z&X-Amz-SignedHeaders=host&X-Amz-Expires=899&X-Amz-Credential=AKIAJEXDXKNYCBUNCCCQ%2F20190224%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=108eb574b2519839eb3cbc13e58cb375ec0af610487a349b559488c1fcd6e167",
     "Score": "64.1%"
   },
   {
@@ -350,7 +352,7 @@
       "CreateTime": "2019-02-23T07:28:53-08:00",
       "LastUpdatedTime": "2019-02-23T15:38:03-08:00"
     },
-    "Url": "https://intuit-qbo-prod-17.s3.amazonaws.com/123145730635304/attachments/eca1f4ab-b0db-4de5-9b90-71689098d648103.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20190224T104935Z&X-Amz-SignedHeaders=host&X-Amz-Expires=900&X-Amz-Credential=AKIAJEXDXKNYCBUNCCCQ%2F20190224%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=6cdb56389c13192f409304c7859d6a770ba25700d6baac6cd29b3b354f78cb99",
+    "Url": "https://intuit-qbo-prod-17.s3.amazonaws.com/123145730635304/attachments/eca1f4ab-b0db-4de5-9b90-71689098d648103.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20190224T113519Z&X-Amz-SignedHeaders=host&X-Amz-Expires=900&X-Amz-Credential=AKIAJEXDXKNYCBUNCCCQ%2F20190224%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=65659ba4837f06f48e66d99fe12950047f5038e2b984260ff1731675b7fbf71e",
     "Score": "56.4%"
   }
 ]
