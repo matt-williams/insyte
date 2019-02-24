@@ -4,7 +4,7 @@
   <div id="wrapper">
 
     <!-- Sidebar -->
-    <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+    <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion " id="accordionSidebar">
 
       <!-- Sidebar - Brand -->
       <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
@@ -19,7 +19,7 @@
       <hr class="sidebar-divider my-0">
 
       <!-- Nav Item - Dashboard -->
-      <li class="nav-item active">
+      <li class="nav-item active collapsed">
         <a class="nav-link" href="#">
           <i class="fas fa-fw fa-tachometer-alt"></i>
           <span>Dashboard</span></a>
@@ -324,7 +324,7 @@
           <!-- DataTales Example -->
           <div class="card shadow mb-4">
             <div class="card-header py-3">
-              <h6 class="m-0 font-weight-bold text-primary">DataTables Example</h6>
+              <h6 class="m-0 font-weight-bold text-primary">Report</h6>
             </div>
             <div class="card-body">
               <div class="table-responsive">
@@ -337,7 +337,7 @@
                         <th scope="col">Image</th>
                         <th scope="col">Revenue</th>
                         <th scope="col">Stock Turnover Ratio</th>
-                        <th scope="col">Social Media Ranking</th>
+                        <th scope="col">Social Media Score</th>
                         <th scope="col">Inventory</th>
                         <th scope="col">Cost of Holding</th>
                         <th scope="col">Unit Sold</th>
@@ -361,7 +361,7 @@
                     <td><img width="64" height="64" class="img-responsive" src="{{Url}}"></img></p></td>
                     <td></td>
                     <td></td>
-                    <td></td>
+                    <td>{{Score}}</td>
                     <td></td>
                     <td></td>
                     <td></td>
@@ -399,7 +399,7 @@
   </a>
 
   <!-- Logout Modal-->
-  <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <!-- <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
@@ -415,7 +415,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 
   <!-- Bootstrap core JavaScript-->
   <script src="vendor/jquery/jquery.min.js"></script>
