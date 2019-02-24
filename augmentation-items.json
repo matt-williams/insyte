@@ -1,0 +1,44 @@
+[
+  {
+    "Name": "Bracelet",
+    "Sku": "105",
+    "Id": "38",
+    "Revenue": 5800,
+    "TurnoverRatio": "10%"
+  },
+  {
+    "Name": "Earrings",
+    "Sku": "106",
+    "Id": "39"
+  },
+  {
+    "Name": "Necklace",
+    "Sku": "104",
+    "Id": "37"
+  },
+  {
+    "Name": "Diamond Ring",
+    "Sku": "101",
+    "Id": "34"
+  },
+  {
+    "Name": "Pink Sapphire Ring",
+    "Sku": "108",
+    "Id": "32"
+  },
+  {
+    "Name": "Ruby Ring",
+    "Sku": "102",
+    "Id": "35"
+  },
+  {
+    "Name": "Tanzanite Ring",
+    "Sku": "107",
+    "Id": "33"
+  },
+  {
+    "Name": "Wedding Band",
+    "Sku": "103",
+    "Id": "36"
+  }
+]
