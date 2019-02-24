@@ -41,21 +41,54 @@ async function getRssImages(feedUrl) {
 
 async function getScores(feedUrl) { 
   var urls = await getRssImages(feedUrl);
-  var scoreById = {};
-  await Promise.all(urls.map(url =>
+  var results = await Promise.all(urls.map(url =>
     clarifai.inputs.search([{"input":{"url": url, 'metadata': {'quickbooks_realm_id': process.env.QUICKBOOKS_REALM_ID}}}]).then(results => {
       if (results.status.code != 10000) {
         return console.log(`Error while searching for ${url}: ${results.status}`);
       }
+      var scoreById = {};
       results.hits.forEach(result => {
-        scoreById[result.input.id] = (scoreById[result.input.id] || 0) + result.score;
+        scoreById[result.input.id] = result.score;
       });
-//      console.log(results.hits.map(result => [result.input.id, result.score]));
+      return {url: url, scores: scoreById};
     })
   ));
-  for (var id in scoreById) {
-    scoreById[id] /= urls.length;
+
+  var ids = {};
+  results.forEach(result => {
+    for (var id in result.scores) {
+      ids[id] = true;
+    }
+  });
+  ids = Object.keys(ids);
+
+  results.forEach(result => {
+    var scores = [];
+    ids.forEach(id => {
+      scores.push(result.scores[id] || 0);
+    });
+    result.scores = scores;
+  });
+
+  var totals = [];
+  for (var ii = 0; ii < ids.length; ii++) {
+    var score = 0;
+    results.forEach(result => {
+      score += result.scores[ii];
+    });
+    totals.push(score / results.length);
   }
+
+  return {ids: ids, results: results, totals: totals};
+}
+
+function summarizeScores(results) {
+  var scoreById = {};
+
+  for (var ii = 0; ii < results.ids.length; ii++) {
+    scoreById[results.ids[ii]] = results.totals[ii];
+  }
+
   return scoreById;
 }
 
@@ -143,8 +176,8 @@ app.engine('handlebars', expressHandlebars({defaultLayout: 'main'}));
 app.set('view engine', 'handlebars');
 app.set('views', './views');
 
-app.get('/', (req, res) => res.redirect('/report.html'))
-app.get('/report.html', async (req, res) => {
+app.get('/', (req, res) => res.redirect('/attachables.html'))
+app.get('/attachables-old.html', async (req, res) => {
   try {
     items = await getItemsWithAttachables();
     res.render('attachables', {'items': items});
@@ -153,7 +186,7 @@ app.get('/report.html', async (req, res) => {
     res.status(500).json(err);
   }
 });
-app.get('/report2.html', async (req, res) => {
+app.get('/attachables.html', async (req, res) => {
   try {
     var items = await getItemsWithAttachables();
     var oldInputs = await clarifai.inputs.list({perPage: 1000});
@@ -171,12 +204,53 @@ app.get('/report2.html', async (req, res) => {
     }
 
     var scores = await getScores('https://www.pinterest.co.uk/matwilliams2875/feed.rss');
+    scores = summarizeScores(scores);
     items.forEach(item => {
       item.Score = (scores[item.Id] * 100).toFixed(1) + '%';
     });
 
     fs.writeFile('items.json', JSON.stringify(items, null, 2), (err) => {if (err) {console.log(err)}});
     res.render('attachables', {'items': items});
+  } catch (err) {
+    console.log(err);
+    res.status(500).json(err);
+  }
+});
+app.get('/pinterest.html', async (req, res) => {
+  try {
+    var items = await getItemsWithAttachables();
+    var oldInputs = await clarifai.inputs.list({perPage: 1000});
+
+    var oldInputsById = {};
+    for (var ii = 0; ii < oldInputs.length; ii++) {
+      var oldInput = oldInputs[ii];
+      oldInputsById[oldInput.id] = oldInput;
+    };
+  
+    var inputs = items.filter(item => !!item.Url && !oldInputsById[item.Id]).map(item => ({'id': item.Id, 'url': item.Url, 'metadata': {'quickbooks_realm_id': process.env.QUICKBOOKS_REALM_ID}}));
+    if (inputs.length > 0) {
+      console.log("Adding to Clarifai", inputs);
+      await clarifai.inputs.create(inputs);
+    }
+
+    var pinterest = await getScores('https://www.pinterest.co.uk/matwilliams2875/feed.rss');
+
+    var itemsById = {};
+    items.forEach(item => {
+      itemsById[item.Id] = item;
+    });
+    var items = [];
+    pinterest.ids.forEach(id => {
+      items[id] = itemsById[id];
+    });
+
+    pinterest.results.forEach(result => {
+      result.scores = result.scores.map(score => (score * 100).toFixed(1) + '%');
+    });
+    pinterest.totals = pinterest.totals.map(score => (score * 100).toFixed(1) + '%');
+
+    fs.writeFile('pinterest.json', JSON.stringify(items, null, 2), (err) => {if (err) {console.log(err)}});
+    res.render('pinterest', {'items': items, 'pinterest': pinterest});
   } catch (err) {
     console.log(err);
     res.status(500).json(err);
