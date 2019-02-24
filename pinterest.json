@@ -73,7 +73,14 @@
       "CreateTime": "2019-02-23T06:14:52-08:00",
       "LastUpdatedTime": "2019-02-23T15:31:54-08:00"
     },
-    "Url": "https://intuit-qbo-prod-5.s3.amazonaws.com/123145730635304/attachments/2e8919ac-1b36-4fff-a4ad-74e26170e1d5NU14.jpg?AWSAccessKeyId=AKIAJEXDXKNYCBUNCCCQ&Expires=1551013875&Signature=nDqyNBFaYZLX8ancNaj4KaRju%2BU%3D"
+    "Url": "https://intuit-qbo-prod-5.s3.amazonaws.com/123145730635304/attachments/2e8919ac-1b36-4fff-a4ad-74e26170e1d5NU14.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20190224T130554Z&X-Amz-SignedHeaders=host&X-Amz-Expires=900&X-Amz-Credential=AKIAJEXDXKNYCBUNCCCQ%2F20190224%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=923662705ef479baacdb59ec4708739fed5f145b56b77bb21ac347f6575b632d",
+    "Recommendation": "Grow product range further, buy new stock",
+    "Profit": "60000",
+    "Revenue": "150000",
+    "StockTurnoverRatio": "166.6",
+    "Inventory": "25",
+    "CostOfHolding": "1800",
+    "UnitSold": "75"
   },
   {
     "Name": "Tanzanite Ring",
@@ -117,7 +124,14 @@
       "CreateTime": "2019-02-23T06:18:37-08:00",
       "LastUpdatedTime": "2019-02-23T15:37:06-08:00"
     },
-    "Url": "https://intuit-qbo-prod-5.s3.amazonaws.com/123145730635304/attachments/3c6c65df-6710-478e-bbf0-22f6685a8d1a107.jpg?AWSAccessKeyId=AKIAJEXDXKNYCBUNCCCQ&Expires=1551013875&Signature=X55Y6oHNTDh8NDG42WvtzqKwBYs%3D"
+    "Url": "https://intuit-qbo-prod-5.s3.amazonaws.com/123145730635304/attachments/3c6c65df-6710-478e-bbf0-22f6685a8d1a107.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20190224T130554Z&X-Amz-SignedHeaders=host&X-Amz-Expires=900&X-Amz-Credential=AKIAJEXDXKNYCBUNCCCQ%2F20190224%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=90197219b9af680b6e303d95a5edbc42d7221c3e5581b26a844b0dfba03888f3",
+    "Recommendation": "Grow product range further, buy new stock",
+    "Profit": "18000",
+    "Revenue": "54000",
+    "StockTurnoverRatio": "56.2",
+    "Inventory": "40",
+    "CostOfHolding": "1920",
+    "UnitSold": "60"
   },
   {
     "Name": "Diamond Ring",
@@ -160,7 +174,14 @@
       "CreateTime": "2019-02-23T07:28:53-08:00",
       "LastUpdatedTime": "2019-02-23T15:39:18-08:00"
     },
-    "Url": "https://intuit-qbo-prod-19.s3.amazonaws.com/123145730635304/attachments/85bd170b-2915-41b0-97f0-bab61ae9eafa101.jpg?AWSAccessKeyId=AKIAJEXDXKNYCBUNCCCQ&Expires=1551013875&Signature=B%2BV2KxLLYqZwUQbRThQH0KQ6vyo%3D"
+    "Url": "https://intuit-qbo-prod-19.s3.amazonaws.com/123145730635304/attachments/85bd170b-2915-41b0-97f0-bab61ae9eafa101.jpg?AWSAccessKeyId=AKIAJEXDXKNYCBUNCCCQ&Expires=1551014454&Signature=PB%2BUhEDJbd%2BILVZEJCFwxAcB5c8%3D",
+    "Recommendation": "Increase price, differentiate product, reduce purchase costs",
+    "Profit": "5050",
+    "Revenue": "101000",
+    "StockTurnoverRatio": "110.2",
+    "Inventory": "9",
+    "CostOfHolding": "1832",
+    "UnitSold": "101"
   },
   {
     "Name": "Ruby Ring",
@@ -203,7 +224,14 @@
       "CreateTime": "2019-02-23T07:28:53-08:00",
       "LastUpdatedTime": "2019-02-23T15:31:54-08:00"
     },
-    "Url": "https://intuit-qbo-prod-5.s3.amazonaws.com/123145730635304/attachments/e5caa978-a6a6-4bf8-975c-cf8ea12ecbb4102.jpg?AWSAccessKeyId=AKIAJEXDXKNYCBUNCCCQ&Expires=1551013875&Signature=rCyi%2FeQi1iWAHD4Dd0wSQLUsT08%3D"
+    "Url": "https://intuit-qbo-prod-5.s3.amazonaws.com/123145730635304/attachments/e5caa978-a6a6-4bf8-975c-cf8ea12ecbb4102.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20190224T130554Z&X-Amz-SignedHeaders=host&X-Amz-Expires=900&X-Amz-Credential=AKIAJEXDXKNYCBUNCCCQ%2F20190224%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=59001eb283ad99ad0e0bdee320f7a89c82156f66d942c724e3bf009e254eb1ce",
+    "Recommendation": "None",
+    "Profit": "3600",
+    "Revenue": "12600",
+    "StockTurnoverRatio": "10.8",
+    "Inventory": "91",
+    "CostOfHolding": "2328",
+    "UnitSold": "9"
   },
   {
     "Name": "Wedding Band",
@@ -246,7 +274,14 @@
       "CreateTime": "2019-02-23T07:28:53-08:00",
       "LastUpdatedTime": "2019-02-23T15:38:03-08:00"
     },
-    "Url": "https://intuit-qbo-prod-17.s3.amazonaws.com/123145730635304/attachments/eca1f4ab-b0db-4de5-9b90-71689098d648103.jpg?AWSAccessKeyId=AKIAJEXDXKNYCBUNCCCQ&Expires=1551013875&Signature=8XbtiW2xDR6XHMVbzFl0v9wmwjo%3D"
+    "Url": "https://intuit-qbo-prod-17.s3.amazonaws.com/123145730635304/attachments/eca1f4ab-b0db-4de5-9b90-71689098d648103.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20190224T130554Z&X-Amz-SignedHeaders=host&X-Amz-Expires=900&X-Amz-Credential=AKIAJEXDXKNYCBUNCCCQ%2F20190224%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=ead797a14e80bddda99d267fb19894cd3b882c4964d566471f689ad495a0c16a",
+    "Recommendation": "Grow product range further, buy new stock",
+    "Profit": "21000",
+    "Revenue": "73500",
+    "StockTurnoverRatio": "81.6",
+    "Inventory": "5",
+    "CostOfHolding": "1800",
+    "UnitSold": "105"
   },
   {
     "Name": "Necklace",
@@ -289,7 +324,14 @@
       "CreateTime": "2019-02-23T07:28:53-08:00",
       "LastUpdatedTime": "2019-02-23T15:31:54-08:00"
     },
-    "Url": "https://intuit-qbo-prod-20.s3.amazonaws.com/123145730635304/attachments/25863fa3-94da-4898-8d55-c4df4184725a104.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20190224T125615Z&X-Amz-SignedHeaders=host&X-Amz-Expires=900&X-Amz-Credential=AKIAJEXDXKNYCBUNCCCQ%2F20190224%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=0dcd540586ca814b7988540da354eeec05dbb7f40b97ba11c041bf229a3cf38e"
+    "Url": "https://intuit-qbo-prod-20.s3.amazonaws.com/123145730635304/attachments/25863fa3-94da-4898-8d55-c4df4184725a104.jpg?AWSAccessKeyId=AKIAJEXDXKNYCBUNCCCQ&Expires=1551014454&Signature=srKE6iaiKNjUhHaeo9PVLagiYwA%3D",
+    "Recommendation": "Reduce inventory",
+    "Profit": "1200",
+    "Revenue": "12000",
+    "StockTurnoverRatio": "10.2",
+    "Inventory": "94",
+    "CostOfHolding": "2352",
+    "UnitSold": "6"
   },
   {
     "Name": "Bracelet",
@@ -332,9 +374,14 @@
       "CreateTime": "2019-02-23T07:28:53-08:00",
       "LastUpdatedTime": "2019-02-23T15:31:54-08:00"
     },
-    "Url": "https://intuit-qbo-prod-28.s3.amazonaws.com/123145730635304/attachments/6e82145d-df44-432f-8059-3db4ddc8d60d105.jpg?AWSAccessKeyId=AKIAJEXDXKNYCBUNCCCQ&Expires=1551013875&Signature=4KvNaYGmhT%2Bh50eFDWNnLI61kEQ%3D",
-    "Revenue": 5800,
-    "TurnoverRatio": "10%"
+    "Url": "https://intuit-qbo-prod-28.s3.amazonaws.com/123145730635304/attachments/6e82145d-df44-432f-8059-3db4ddc8d60d105.jpg?AWSAccessKeyId=AKIAJEXDXKNYCBUNCCCQ&Expires=1551014454&Signature=FYw%2FaveLPusuyCY6LebB1seDK94%3D",
+    "Recommendation": "Reduce inventory",
+    "Profit": "6800",
+    "Revenue": "14800",
+    "StockTurnoverRatio": "12.7",
+    "Inventory": "90",
+    "CostOfHolding": "2320",
+    "UnitSold": "10"
   },
   {
     "Name": "Earrings",
@@ -377,6 +424,13 @@
       "CreateTime": "2019-02-23T07:28:54-08:00",
       "LastUpdatedTime": "2019-02-23T15:31:54-08:00"
     },
-    "Url": "https://intuit-qbo-prod-27.s3.amazonaws.com/123145730635304/attachments/c1f3fa7b-491e-43ee-b400-2cea277c3607106.jpg?AWSAccessKeyId=AKIAJEXDXKNYCBUNCCCQ&Expires=1551013875&Signature=dIOQt4cCKyYEQECr%2BAd0pqrm%2Fw0%3D"
+    "Url": "https://intuit-qbo-prod-27.s3.amazonaws.com/123145730635304/attachments/c1f3fa7b-491e-43ee-b400-2cea277c3607106.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20190224T130554Z&X-Amz-SignedHeaders=host&X-Amz-Expires=900&X-Amz-Credential=AKIAJEXDXKNYCBUNCCCQ%2F20190224%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=0df13394560028fcd35dd8f9afa8627975a823217a785914334e7c632333f224",
+    "Recommendation": "None",
+    "Profit": "3750",
+    "Revenue": "12000",
+    "StockTurnoverRatio": "10.5",
+    "Inventory": "85",
+    "CostOfHolding": "2280",
+    "UnitSold": "15"
   }
 ]
