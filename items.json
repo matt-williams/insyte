@@ -40,8 +40,15 @@
       "CreateTime": "2019-02-23T07:28:53-08:00",
       "LastUpdatedTime": "2019-02-23T15:31:54-08:00"
     },
-    "Url": "https://intuit-qbo-prod-28.s3.amazonaws.com/123145730635304/attachments/6e82145d-df44-432f-8059-3db4ddc8d60d105.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20190224T104935Z&X-Amz-SignedHeaders=host&X-Amz-Expires=899&X-Amz-Credential=AKIAJEXDXKNYCBUNCCCQ%2F20190224%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=4c8f0343a3f0b079592e3dfc203443ff4b75886869ea7c55a23b8189aa976106",
-    "Score": "45.2%"
+    "Url": "https://intuit-qbo-prod-28.s3.amazonaws.com/123145730635304/attachments/6e82145d-df44-432f-8059-3db4ddc8d60d105.jpg?AWSAccessKeyId=AKIAJEXDXKNYCBUNCCCQ&Expires=1551014439&Signature=NQGoE5F%2FLBCbrIdHBTOYquHDw7w%3D",
+    "Recommendation": "Reduce inventory",
+    "Profit": "6800",
+    "Revenue": "14800",
+    "StockTurnoverRatio": "12.7",
+    "Inventory": "90",
+    "CostOfHolding": "2320",
+    "UnitSold": "10",
+    "Score": "42.8%"
   },
   {
     "Name": "Earrings",
@@ -84,8 +91,15 @@
       "CreateTime": "2019-02-23T07:28:54-08:00",
       "LastUpdatedTime": "2019-02-23T15:31:54-08:00"
     },
-    "Url": "https://intuit-qbo-prod-27.s3.amazonaws.com/123145730635304/attachments/c1f3fa7b-491e-43ee-b400-2cea277c3607106.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20190224T104935Z&X-Amz-SignedHeaders=host&X-Amz-Expires=900&X-Amz-Credential=AKIAJEXDXKNYCBUNCCCQ%2F20190224%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=a8ee221c5ef20dc08363a9c423910003da846e4df52b5e2d497130728ab332c9",
-    "Score": "55.5%"
+    "Url": "https://intuit-qbo-prod-27.s3.amazonaws.com/123145730635304/attachments/c1f3fa7b-491e-43ee-b400-2cea277c3607106.jpg?AWSAccessKeyId=AKIAJEXDXKNYCBUNCCCQ&Expires=1551014439&Signature=d0z6IOQxUKDEMMR6Px%2FQ%2FprEoMw%3D",
+    "Recommendation": "None",
+    "Profit": "3750",
+    "Revenue": "12000",
+    "StockTurnoverRatio": "10.5",
+    "Inventory": "85",
+    "CostOfHolding": "2280",
+    "UnitSold": "15",
+    "Score": "58.2%"
   },
   {
     "Name": "Necklace",
@@ -128,8 +142,15 @@
       "CreateTime": "2019-02-23T07:28:53-08:00",
       "LastUpdatedTime": "2019-02-23T15:31:54-08:00"
     },
-    "Url": "https://intuit-qbo-prod-20.s3.amazonaws.com/123145730635304/attachments/25863fa3-94da-4898-8d55-c4df4184725a104.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20190224T104935Z&X-Amz-SignedHeaders=host&X-Amz-Expires=899&X-Amz-Credential=AKIAJEXDXKNYCBUNCCCQ%2F20190224%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=c40e379f45ecc0304e8b97f823a75934f4d0a51ae25a4c63b7c7a9c181634210",
-    "Score": "48.3%"
+    "Url": "https://intuit-qbo-prod-20.s3.amazonaws.com/123145730635304/attachments/25863fa3-94da-4898-8d55-c4df4184725a104.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20190224T130539Z&X-Amz-SignedHeaders=host&X-Amz-Expires=899&X-Amz-Credential=AKIAJEXDXKNYCBUNCCCQ%2F20190224%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=da2ca45ecca8b53539dd686b7a4e034bfa58212319775174efe5d76153ebd545",
+    "Recommendation": "Reduce inventory",
+    "Profit": "1200",
+    "Revenue": "12000",
+    "StockTurnoverRatio": "10.2",
+    "Inventory": "94",
+    "CostOfHolding": "2352",
+    "UnitSold": "6",
+    "Score": "47.5%"
   },
   {
     "Name": "Diamond Ring",
@@ -172,8 +193,15 @@
       "CreateTime": "2019-02-23T07:28:53-08:00",
       "LastUpdatedTime": "2019-02-23T15:39:18-08:00"
     },
-    "Url": "https://intuit-qbo-prod-19.s3.amazonaws.com/123145730635304/attachments/85bd170b-2915-41b0-97f0-bab61ae9eafa101.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20190224T104935Z&X-Amz-SignedHeaders=host&X-Amz-Expires=900&X-Amz-Credential=AKIAJEXDXKNYCBUNCCCQ%2F20190224%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=dbfdba89fe19a31af7b67988daa608e55eb1cd4a2aaa59b05954f3c4c82a6e7d",
-    "Score": "66.0%"
+    "Url": "https://intuit-qbo-prod-19.s3.amazonaws.com/123145730635304/attachments/85bd170b-2915-41b0-97f0-bab61ae9eafa101.jpg?AWSAccessKeyId=AKIAJEXDXKNYCBUNCCCQ&Expires=1551014439&Signature=ES9OKoNYmBIT1DgJ3T8%2FG79DJ0I%3D",
+    "Recommendation": "Increase price, differentiate product, reduce purchase costs",
+    "Profit": "5050",
+    "Revenue": "101000",
+    "StockTurnoverRatio": "110.2",
+    "Inventory": "9",
+    "CostOfHolding": "1832",
+    "UnitSold": "101",
+    "Score": "73.9%"
   },
   {
     "Name": "Pink Sapphire Ring",
@@ -217,8 +245,15 @@
       "CreateTime": "2019-02-23T06:14:52-08:00",
       "LastUpdatedTime": "2019-02-23T15:31:54-08:00"
     },
-    "Url": "https://intuit-qbo-prod-5.s3.amazonaws.com/123145730635304/attachments/2e8919ac-1b36-4fff-a4ad-74e26170e1d5NU14.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20190224T104935Z&X-Amz-SignedHeaders=host&X-Amz-Expires=900&X-Amz-Credential=AKIAJEXDXKNYCBUNCCCQ%2F20190224%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=ade206b4fda1e659dc8493678695b5fdb4df2e92308448826468cff5668e3015",
-    "Score": "66.3%"
+    "Url": "https://intuit-qbo-prod-5.s3.amazonaws.com/123145730635304/attachments/2e8919ac-1b36-4fff-a4ad-74e26170e1d5NU14.jpg?AWSAccessKeyId=AKIAJEXDXKNYCBUNCCCQ&Expires=1551014439&Signature=e8d3JfNj6WRJ96MHP9%2Bl%2B8SV8ZA%3D",
+    "Recommendation": "Grow product range further, buy new stock",
+    "Profit": "60000",
+    "Revenue": "150000",
+    "StockTurnoverRatio": "166.6",
+    "Inventory": "25",
+    "CostOfHolding": "1800",
+    "UnitSold": "75",
+    "Score": "74.5%"
   },
   {
     "Name": "Ruby Ring",
@@ -261,8 +296,15 @@
       "CreateTime": "2019-02-23T07:28:53-08:00",
       "LastUpdatedTime": "2019-02-23T15:31:54-08:00"
     },
-    "Url": "https://intuit-qbo-prod-5.s3.amazonaws.com/123145730635304/attachments/e5caa978-a6a6-4bf8-975c-cf8ea12ecbb4102.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20190224T104935Z&X-Amz-SignedHeaders=host&X-Amz-Expires=900&X-Amz-Credential=AKIAJEXDXKNYCBUNCCCQ%2F20190224%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=2e6b65be34edd407d0b9d10a19579e34d254247145fa5fbe358999c1e4ccc08c",
-    "Score": "66.6%"
+    "Url": "https://intuit-qbo-prod-5.s3.amazonaws.com/123145730635304/attachments/e5caa978-a6a6-4bf8-975c-cf8ea12ecbb4102.jpg?AWSAccessKeyId=AKIAJEXDXKNYCBUNCCCQ&Expires=1551014439&Signature=cJ1OWSU86rNTMFJj9tsBCJiQdw8%3D",
+    "Recommendation": "None",
+    "Profit": "3600",
+    "Revenue": "12600",
+    "StockTurnoverRatio": "10.8",
+    "Inventory": "91",
+    "CostOfHolding": "2328",
+    "UnitSold": "9",
+    "Score": "74.9%"
   },
   {
     "Name": "Tanzanite Ring",
@@ -306,8 +348,15 @@
       "CreateTime": "2019-02-23T06:18:37-08:00",
       "LastUpdatedTime": "2019-02-23T15:37:06-08:00"
     },
-    "Url": "https://intuit-qbo-prod-5.s3.amazonaws.com/123145730635304/attachments/3c6c65df-6710-478e-bbf0-22f6685a8d1a107.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20190224T104935Z&X-Amz-SignedHeaders=host&X-Amz-Expires=900&X-Amz-Credential=AKIAJEXDXKNYCBUNCCCQ%2F20190224%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=76c4486550f74d8777f044ee30d7537ffabf42a6453e35a278e1e0158fdbb255",
-    "Score": "64.1%"
+    "Url": "https://intuit-qbo-prod-5.s3.amazonaws.com/123145730635304/attachments/3c6c65df-6710-478e-bbf0-22f6685a8d1a107.jpg?AWSAccessKeyId=AKIAJEXDXKNYCBUNCCCQ&Expires=1551014439&Signature=bxGlcz%2Fi2Xk04FJALxxTxokKfg0%3D",
+    "Recommendation": "Grow product range further, buy new stock",
+    "Profit": "18000",
+    "Revenue": "54000",
+    "StockTurnoverRatio": "56.2",
+    "Inventory": "40",
+    "CostOfHolding": "1920",
+    "UnitSold": "60",
+    "Score": "71.1%"
   },
   {
     "Name": "Wedding Band",
@@ -350,7 +399,14 @@
       "CreateTime": "2019-02-23T07:28:53-08:00",
       "LastUpdatedTime": "2019-02-23T15:38:03-08:00"
     },
-    "Url": "https://intuit-qbo-prod-17.s3.amazonaws.com/123145730635304/attachments/eca1f4ab-b0db-4de5-9b90-71689098d648103.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20190224T104935Z&X-Amz-SignedHeaders=host&X-Amz-Expires=900&X-Amz-Credential=AKIAJEXDXKNYCBUNCCCQ%2F20190224%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=6cdb56389c13192f409304c7859d6a770ba25700d6baac6cd29b3b354f78cb99",
-    "Score": "56.4%"
+    "Url": "https://intuit-qbo-prod-17.s3.amazonaws.com/123145730635304/attachments/eca1f4ab-b0db-4de5-9b90-71689098d648103.jpg?AWSAccessKeyId=AKIAJEXDXKNYCBUNCCCQ&Expires=1551014439&Signature=EW9oeVeuJ%2FRvextsyirhE3JK9yA%3D",
+    "Recommendation": "Grow product range further, buy new stock",
+    "Profit": "21000",
+    "Revenue": "73500",
+    "StockTurnoverRatio": "81.6",
+    "Inventory": "5",
+    "CostOfHolding": "1800",
+    "UnitSold": "105",
+    "Score": "59.6%"
   }
 ]
